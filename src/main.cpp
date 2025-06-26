@@ -1,19 +1,16 @@
 #include "particle.hpp"
 #include <SFML/Graphics.hpp>
-#include <SFML/Graphics/Color.hpp>
 
 sf::Vector2f line1Start;
 sf::Vector2f line1End;
 sf::Vector2f line2Start;
 sf::Vector2f line2End;
 
-sf::Color blue = sf::Color::Cyan;
+sf::Color cyan = sf::Color::Cyan;
 sf::Color purple = sf::Color(255, 179, 216, 255);
 
 sf::Vector2f winDim{400, 400};
 sf::Vector2i dragOffSet1, dragOffSet2;
-
-float radius{150};
 
 bool dragging = false;
 bool entangeled = false;
@@ -40,13 +37,13 @@ int main()
     sf::CircleShape sub_core2(0);
 
     // Particles
-    Particle wave_particle_1(window1, {winDim.x / 2, winDim.y / 2}, static_cast<sf::Vector2u>(winDim), 500, 200, blue, 256, 400, 0);
+    Particle wave_particle_1(window1, {winDim.x / 2, winDim.y / 2}, static_cast<sf::Vector2u>(winDim), 500, 200, cyan, 256, 400, 0);
 
     Particle wave_particle_2(window2, {winDim.x / 2, winDim.y / 2}, static_cast<sf::Vector2u>(winDim), 500, 200, purple, 256, 400, 0);
 
     Particle sub_wave_particle_1(window1, {line1End}, static_cast<sf::Vector2u>(winDim), 500, 200, purple, 256, 400, 0);
 
-    Particle sub_wave_particle_2(window2, {line2End}, static_cast<sf::Vector2u>(winDim), 500, 200, blue, 256, 400, 0);
+    Particle sub_wave_particle_2(window2, {line2End}, static_cast<sf::Vector2u>(winDim), 500, 200, cyan, 256, 400, 0);
 
     Particle core_wave_particle_1(window1, {winDim.x / 2, winDim.y / 2}, static_cast<sf::Vector2u>(winDim), 100, 50, sf::Color::White, 256, 400, 0);
 
@@ -87,9 +84,6 @@ int main()
         sub_wave_particle_2.setPosition(line2End);
         sub_core_wave_particle_1.setPosition(line1End);
         sub_core_wave_particle_2.setPosition(line2End);
-
-        sf::Vector2f subPos1(line1End.x - radius, line1End.y - radius);
-        sf::Vector2f subPos2(line2End.x - radius, line2End.y - radius);
 
         sf::Vector2i mouseGlobalPos = sf::Mouse::getPosition();
         while (const std::optional event1 = window1.pollEvent())
