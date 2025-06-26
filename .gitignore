@@ -4,3 +4,5 @@ out
 .idea
 .vs
 .vscode
+.clang-format
+compile_commands.json
