@@ -1,3 +1,17 @@
+# Not-quantum-entanglement simulation
+A simple simulation to visualize quantum entanglement phenomena, nothing was intended to be scientifically accurate.
+
+Project inspired from: Bjørn Gunnar Staal [https://www.youtube.com/watch?v=aKPkYY-CYuw]
+
+# Introduction
+Project made with C++ and SFML 3.0 (simple and fast multimedia library). No 3d library included, everything was made in 2d.
+
+
+
+
+
+
+
 # CMake SFML Project Template
 
 This repository template should allow for a fast and hassle-free kick start of your next SFML project using CMake.
