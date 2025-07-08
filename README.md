@@ -14,4 +14,6 @@ Project made with C++ and SFML 3.0 (simple and fast multimedia library). No 3d l
 - entanglement: when the particles are first created they are not entangled yet, the one spining has a defined state (for example +1/2 spin) but the second one has an undefined state(the particle isn't rotating), after entanglement (when the particles are in the same position) the second particle gets a defined state (-1/2 spin).
 - quantum information: represented by the line between the core of the two particles.
 - distance dependency: even if the two particles exist in different galaxies (different rendering windows) they remain entangled (the line still follows the core of particles).
-(./def_not_qm_entgl.mp4)
+
+## demo
+[watch the video](./def_not_qm_entgl.mp4)
