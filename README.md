@@ -15,5 +15,4 @@ Project made with C++ and SFML 3.0 (simple and fast multimedia library). No 3d l
 - quantum information: represented by the line between the core of the two particles.
 - distance dependency: even if the two particles exist in different galaxies (different rendering windows) they remain entangled (the line still follows the core of particles).
 
-## demo
-[watch the video](./def_not_qm_entgl.mp4)
+
